@@ -1,0 +1,54 @@
+.navbar-pg{
+	nav{
+		background: linear-gradient(
+			rgb(36, 150, 220), 
+			darken(rgb(36, 150, 220),20)
+		);
+		ul{
+			margin: 0;
+			padding-left: 0;
+			li{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				border-bottom: 1px solid darken(#fff,20);
+				a{
+					text-decoration: none;
+					color: darken(#fff,10);
+					display: block;
+					padding: 10px;
+					&:hover{
+						color: #fff;
+						background: lighten(rgb(36, 150, 220), 3);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1024px){
+	.navbar-pg{
+		nav{
+			background: linear-gradient(
+			rgb(36, 150, 220), 
+			rgb(36, 150, 220)
+		  );
+			ul{
+				margin: 0;
+				padding-left: 0;
+				li{
+					list-style: none;
+					display: inline-block;
+					border-bottom: none;
+					a{
+						text-decoration: none;
+						color: darken(#fff,10);
+						display: block;
+						padding: 10px;
+					}
+				}
+			}
+		}
+	}
+}

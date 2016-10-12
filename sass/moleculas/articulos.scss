@@ -1,0 +1,54 @@
+.articulo{
+	article{
+		h2{
+			span{
+				font-size: 19px;
+			}
+		}
+		img{
+			width: 100%;
+			height: auto;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+		p{
+			padding: 0 10px;
+		}
+		.ver-mas{
+			display: block;
+			margin: 0 10px;
+			text-align: center;
+			background: linear-gradient(
+									rgb(36, 150, 220),
+									rgb(42, 128, 185)
+			);
+			color: darken(#fff,10);
+			border-color: darken(rgb(42, 128, 185),10);
+			&:hover{
+				background: linear-gradient(
+									lighten(rgb(36, 150, 220),5),
+									lighten(rgb(42, 128, 185),5)
+			);
+			color: #fff;
+			}
+		}
+	}
+}
+
+@media (min-width:720px){
+	.articulo{
+		article{
+			width: 50%;
+			float: left;
+		}
+	}
+}
+
+@media (min-width:1024px){
+	.articulo{
+		article{
+			width: 25%;
+			float: left;
+		}
+	}
+}
